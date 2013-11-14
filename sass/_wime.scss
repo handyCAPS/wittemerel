@@ -1,0 +1,46 @@
+body {
+	color: $black;
+	font-family: $bodyFont;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $headerFont;
+}
+
+a {
+	color: $brightGreen;
+	transition: color 0.3s ease;
+		&:hover {
+			color: darken($brightGreen, 16);
+		}
+}
+
+#bannerWrap {
+	padding: $step-1 + em 0;
+}
+
+.image_wrap img {
+	width: 100%;
+}
+
+#mainContent {
+	overflow: hidden;
+	background-color: $fadedGreen;
+	-webkit-box-shadow: 0px 0px 5px $black;
+	-moz-box-shadow: 0px 0px 5px $black;
+	box-shadow: 0px 0px 5px $black;
+
+}
+
+#sideBarWrap {
+	
+}
+
+#mainContentWrap {
+	background-color: $lightGreen;
+	ul {
+		padding: $step1 + em;
+	}
+}
