@@ -3,6 +3,7 @@ body {
 	font-family: $bodyFont;
 	font-size: 16px;
 	text-rendering: optimizeLegibility;
+	background: url('../images/paper.png');
 }
 
 h1, h2, h3, h4, h5 {
@@ -17,6 +18,98 @@ a {
 		}
 }
 
+ol {
+	list-style-position: inside;
+}
+
+header {
+	overflow: hidden;
+}
+
+nav {
+	overflow: hidden;
+		ul {
+			overflow: hidden;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			background-color: $darkGreen;
+				ul {
+						display: none;
+					}
+				li {
+					float: left;
+					padding: $step-2 + em $step1 + em;
+					background-color: $darkGreen;
+					transition: all 0.3s ease-out;
+						&:hover, &.current-menu-item {
+							background-color: lighten(saturate($darkGreen, 20), 12);
+								a {
+									color: darken($darkGreen, 6);
+									text-shadow: 0px 0.6px 0.3px $brightGreen;
+								}
+						&:hover {
+							background-color: lighten(saturate($darkGreen, 26), 18);
+						}
+						}
+						a {
+							font-size: 1.2em;
+							font-weight: bold;
+							display: inline-block;
+							width: 100%;
+							color: $fadedGreen;
+							text-shadow: 0.6px 0.6px 0.6px $black;
+						}
+				}
+		}
+}
+
+article {
+	background-color: $white;
+	background-image: url("../images/linedpaper.png");
+	padding: $step1 + em $step-1 + em;
+	margin-bottom: $step2 + em;
+	box-shadow: 5px 4px 15px -10px rgba(0,0,0,0.3),
+				4px 4px 5px -2px rgba(0,0,0,0.3),
+				-4px 4px 5px -2px rgba(0,0,0,0.3);
+		h1, h2 {
+			margin-top: 0;
+			color: $brightGreen;
+			background-color: $brown;
+			display: inline-block;
+			padding: 0 + em $step-1 + em 0 $step-4 + em;
+			text-shadow: 0.6px 0.2px 1px $black;
+		}
+}
+
+.quote {
+	font-family: $scriptFont;
+	font-size: $step4 + em;
+	padding: 0.1em 0.36em 0;
+	line-height: 0.8;
+	font-weight: bold;
+	color: $brown;
+	opacity: 0.8;
+		footer {
+			text-align: right;
+		}
+}
+
+#headerQuote {
+	position: absolute;
+	text-align: right;
+	padding-right: $step-1 + em;
+	width: 50%;
+	left: 40%;
+	text-shadow: 1.4px 1.4px 1px $black,
+				-0.4px -0.4px 1px $darkGreen;
+	padding-top: $step-5 + em;
+	line-height: 1;
+	opacity: 0.8;
+	font-weight: normal;
+	color: $fadedGreen;
+}
+
 #bannerWrap {
 	padding: $step-1 + em 0;
 }
@@ -28,19 +121,52 @@ a {
 #mainContent {
 	overflow: hidden;
 	background-color: $fadedGreen;
-	-webkit-box-shadow: 0px 0px 5px $black;
-	-moz-box-shadow: 0px 0px 5px $black;
-	box-shadow: 0px 0px 5px $black;
+	padding: $step1 + em $step1 + em $step2 + em;
+	min-height: $step5 * $step5 + em;
+	-webkit-box-shadow: 3px 0px 5px -2px $black;
+	-moz-box-shadow: 3px 0px 5px -2px $black;
+	box-shadow: 3px 0px 5px -2px $black;
 
-}
-
-#sideBarWrap {
-	
 }
 
 #mainContentWrap {
 	background-color: $lightGreen;
+	-webkit-box-shadow: 0px 0px 5px -2px $black;
+	-moz-box-shadow: 0px 0px 5px -2px $black;
+	box-shadow: 0px 0px 5px -2px $black;
 	ul {
 		padding: $step1 + em;
 	}
+}
+
+#sideBarWrap {
+	padding-top: $step2 + em;
+		h2 {
+			font-size: $step2 + em;
+			color: $fadedGreen;
+		}
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+				li {
+					font-size: 1.2em;
+					background-color: $darkGreen;
+					padding: $step-2 + em $step-1 + em;
+					margin: $step-1 + em 0;
+					transition: all 0.3s ease-out;
+					color: $fadedGreen;
+						&:hover {
+							background-color: lighten(saturate($darkGreen, 26), 24);
+								a {
+									color: $black;
+								}
+						}
+						a {
+							display: inline-block;
+							width: 100%;
+							color: $fadedGreen;
+						}
+				}
+		}
 }

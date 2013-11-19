@@ -6,8 +6,9 @@ $white: #F0F0F0;
 
 $darkGreen: #374008;
 $lightGreen: #EDFCA1;
-$brightGreen: #798F04;
+$brightGreen: lighten(#798F04, 6);
 $fadedGreen: #F5FDC8;
+$brown: #6A644E;
 
 $primary-color: $darkGreen;
 $secondary-color: $lightGreen;
@@ -36,4 +37,4 @@ $step-7: $step-6 / $scale;
 
 $bodyFont: 'CharisSILRegular', serif;
 $headerFont: 'CharisSILRegular', serif;
-$scriptFont: 'Cortina', sans-serif;
+$scriptFont: 'LoversQuarrelRegular', sans-serif;

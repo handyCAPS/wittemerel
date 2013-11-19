@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 			<div id="mainContent" class="large-8 columns">
 				<?php if (have_posts()): while(have_posts()): the_post(); ?>
-					<h2><?php the_title(); ?></h2>
 					<article>
+					<h2><?php the_title(); ?></h2>
+
 						<?php the_content(); ?>
 						<?php edit_post_link('Bewerken'); ?>
 					</article>
