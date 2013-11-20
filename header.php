@@ -31,9 +31,9 @@
 					Boeken hebben, net als mensen, hun succes vaak aan hun titel te danken.
 					<footer>- Peter Sirius</footer>
 				</div><!--  end topQuote  -->
-				<div id="logo" class="small-4 columns image_wrap">
+				<a href="<?php echo bloginfo('home'); ?>"><div id="logo" class="small-4 columns image_wrap">
 					<img src="<?php echo THEMEPATH; ?>/images/logo.png" alt="De Witte Merel">
-				</div><!--  end logo  -->
+				</div></a><!--  end logo  -->
 			</div><!--  end bannerWrap  -->
 			<div id="mainMenuWrap" class="row">
 				<?php

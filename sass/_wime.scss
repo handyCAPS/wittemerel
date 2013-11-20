@@ -26,6 +26,16 @@ header {
 	overflow: hidden;
 }
 
+.alignright, .right {
+	float: right;
+	margin: 0 0 $step-1 + em $step1 + em;
+}
+
+.alignleft, .left {
+	float: left;
+	margin: 0 $step1 + em $step-1 + em 0;
+}
+
 nav {
 	overflow: hidden;
 		ul {
@@ -57,7 +67,7 @@ nav {
 							font-weight: bold;
 							display: inline-block;
 							width: 100%;
-							color: $fadedGreen;
+							color: $white;
 							text-shadow: 0.6px 0.6px 0.6px $black;
 						}
 				}
@@ -65,6 +75,7 @@ nav {
 }
 
 article {
+	overflow: hidden;
 	background-color: $white;
 	background-image: url("../images/linedpaper.png");
 	padding: $step1 + em $step-1 + em;
@@ -77,8 +88,15 @@ article {
 			color: $brightGreen;
 			background-color: $brown;
 			display: inline-block;
-			padding: 0 + em $step-1 + em 0 $step-4 + em;
-			text-shadow: 0.6px 0.2px 1px $black;
+			padding: 0 + em $step1 + rem $step-3 + rem $step-1 + rem;
+			text-shadow: 1.12px 0.8px 1px $black;
+			box-shadow: 0px 5px 5px -5px $black;
+		}
+		p {
+			padding: 0 $step-3 + em;
+		}
+		img {
+
 		}
 }
 

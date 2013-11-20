@@ -2,12 +2,12 @@
 // colours:
 
 $black: #222;
-$white: #F0F0F0;
+$white: #F4F4F4;
 
 $darkGreen: #374008;
-$lightGreen: #EDFCA1;
-$brightGreen: lighten(#798F04, 6);
-$fadedGreen: #F5FDC8;
+$lightGreen: desaturate(#EDFCA1, 30);
+$brightGreen: desaturate(#798F04, 2);
+$fadedGreen: desaturate(#F5FDC8, 12);
 $brown: #6A644E;
 
 $primary-color: $darkGreen;
